@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041446FE4BE1B28F98C59A0C /* Pods_TouchIDAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8E54443F4BC26230FB5616 /* Pods_TouchIDAuth.framework */; };
 		9ED12FF01F9B933A002997C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED12FEF1F9B933A002997C8 /* AppDelegate.swift */; };
 		9ED12FF21F9B933A002997C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED12FF11F9B933A002997C8 /* ViewController.swift */; };
 		9ED12FF51F9B933A002997C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED12FF31F9B933A002997C8 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BEE248F0BD45D11879C2294 /* Pods-TouchIDAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDAuth/Pods-TouchIDAuth.release.xcconfig"; sourceTree = "<group>"; };
+		2D8E54443F4BC26230FB5616 /* Pods_TouchIDAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchIDAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED12FEC1F9B933A002997C8 /* TouchIDAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED12FEF1F9B933A002997C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED12FF11F9B933A002997C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9ED12FF61F9B933A002997C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ED12FF91F9B933A002997C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ED12FFB1F9B933A002997C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8635602F7A51C08E484C70 /* Pods-TouchIDAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDAuth/Pods-TouchIDAuth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041446FE4BE1B28F98C59A0C /* Pods_TouchIDAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91C3AAB1195A05A3D63E325C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E54443F4BC26230FB5616 /* Pods_TouchIDAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9ED12FE31F9B933A002997C8 = {
 			isa = PBXGroup;
 			children = (
 				9ED12FEE1F9B933A002997C8 /* TouchIDAuth */,
 				9ED12FED1F9B933A002997C8 /* Products */,
+				D9D4C10FE2C82B322886A364 /* Pods */,
+				91C3AAB1195A05A3D63E325C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = TouchIDAuth;
 			sourceTree = "<group>";
 		};
+		D9D4C10FE2C82B322886A364 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD8635602F7A51C08E484C70 /* Pods-TouchIDAuth.debug.xcconfig */,
+				2BEE248F0BD45D11879C2294 /* Pods-TouchIDAuth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED12FFE1F9B933A002997C8 /* Build configuration list for PBXNativeTarget "TouchIDAuth" */;
 			buildPhases = (
+				8CA66030BD7947816F09CA20 /* [CP] Check Pods Manifest.lock */,
 				9ED12FE81F9B933A002997C8 /* Sources */,
 				9ED12FE91F9B933A002997C8 /* Frameworks */,
 				9ED12FEA1F9B933A002997C8 /* Resources */,
+				553A4CDF527C56A13E8D69AA /* [CP] Embed Pods Frameworks */,
+				5C952CCF3788F70E38480BF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		553A4CDF527C56A13E8D69AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDAuth/Pods-TouchIDAuth-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDAuth/Pods-TouchIDAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C952CCF3788F70E38480BF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDAuth/Pods-TouchIDAuth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA66030BD7947816F09CA20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchIDAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9ED12FE81F9B933A002997C8 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		9ED12FFF1F9B933A002997C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8635602F7A51C08E484C70 /* Pods-TouchIDAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		9ED130001F9B933A002997C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEE248F0BD45D11879C2294 /* Pods-TouchIDAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
