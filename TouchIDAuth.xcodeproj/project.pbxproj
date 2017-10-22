@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		041446FE4BE1B28F98C59A0C /* Pods_TouchIDAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8E54443F4BC26230FB5616 /* Pods_TouchIDAuth.framework */; };
+		9E540C681F9C427400C76D99 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E540C671F9C3ECA00C76D99 /* DLRadioButton.m */; };
 		9ED12FF01F9B933A002997C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED12FEF1F9B933A002997C8 /* AppDelegate.swift */; };
-		9ED12FF21F9B933A002997C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED12FF11F9B933A002997C8 /* ViewController.swift */; };
+		9ED12FF21F9B933A002997C8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED12FF11F9B933A002997C8 /* LoginVC.swift */; };
 		9ED12FF51F9B933A002997C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED12FF31F9B933A002997C8 /* Main.storyboard */; };
 		9ED12FF71F9B933A002997C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED12FF61F9B933A002997C8 /* Assets.xcassets */; };
 		9ED12FFA1F9B933A002997C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED12FF81F9B933A002997C8 /* LaunchScreen.storyboard */; };
@@ -18,9 +19,12 @@
 /* Begin PBXFileReference section */
 		2BEE248F0BD45D11879C2294 /* Pods-TouchIDAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDAuth/Pods-TouchIDAuth.release.xcconfig"; sourceTree = "<group>"; };
 		2D8E54443F4BC26230FB5616 /* Pods_TouchIDAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchIDAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E540C651F9C3EC900C76D99 /* TouchIDAuth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchIDAuth-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E540C661F9C3ECA00C76D99 /* DLRadioButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		9E540C671F9C3ECA00C76D99 /* DLRadioButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		9ED12FEC1F9B933A002997C8 /* TouchIDAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED12FEF1F9B933A002997C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9ED12FF11F9B933A002997C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9ED12FF11F9B933A002997C8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9ED12FF41F9B933A002997C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ED12FF61F9B933A002997C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ED12FF91F9B933A002997C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +52,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E540C641F9C3EAD00C76D99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E540C661F9C3ECA00C76D99 /* DLRadioButton.h */,
+				9E540C671F9C3ECA00C76D99 /* DLRadioButton.m */,
+				9E540C651F9C3EC900C76D99 /* TouchIDAuth-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9ED12FE31F9B933A002997C8 = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +83,9 @@
 		9ED12FEE1F9B933A002997C8 /* TouchIDAuth */ = {
 			isa = PBXGroup;
 			children = (
+				9E540C641F9C3EAD00C76D99 /* Supporting Files */,
 				9ED12FEF1F9B933A002997C8 /* AppDelegate.swift */,
-				9ED12FF11F9B933A002997C8 /* ViewController.swift */,
+				9ED12FF11F9B933A002997C8 /* LoginVC.swift */,
 				9ED12FF31F9B933A002997C8 /* Main.storyboard */,
 				9ED12FF61F9B933A002997C8 /* Assets.xcassets */,
 				9ED12FF81F9B933A002997C8 /* LaunchScreen.storyboard */,
@@ -123,6 +138,7 @@
 				TargetAttributes = {
 					9ED12FEB1F9B933A002997C8 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -217,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ED12FF21F9B933A002997C8 /* ViewController.swift in Sources */,
+				9ED12FF21F9B933A002997C8 /* LoginVC.swift in Sources */,
+				9E540C681F9C427400C76D99 /* DLRadioButton.m in Sources */,
 				9ED12FF01F9B933A002997C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,12 +373,15 @@
 			baseConfigurationReference = FD8635602F7A51C08E484C70 /* Pods-TouchIDAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZELVJRAH4Y;
 				INFOPLIST_FILE = TouchIDAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ownApplicationDevelopment.TouchIDAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchIDAuth/Supporting Files/TouchIDAuth-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,12 +392,14 @@
 			baseConfigurationReference = 2BEE248F0BD45D11879C2294 /* Pods-TouchIDAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZELVJRAH4Y;
 				INFOPLIST_FILE = TouchIDAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ownApplicationDevelopment.TouchIDAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchIDAuth/Supporting Files/TouchIDAuth-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
