@@ -17,6 +17,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {}
 
+    var error:NSError?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let usernameString = KeychainWrapper.standard.string(forKey: "UsernameKey")
@@ -51,6 +53,14 @@ class LoginVC: UIViewController {
         }
     }
     
+    func touchOptionAvailableOrNotAlert() {
+        let alert = UIAlertController.init(title: "No Touch ID Option", message: "Buy a New Upgraded iPhone", preferredStyle: .alert)
+        let cancelAtn = UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAtn)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     func showCustomErrorMessageAlert(error: LAError) {
         switch error {
         case LAError.authenticationFailed:
@@ -58,6 +68,13 @@ class LoginVC: UIViewController {
         default:
             self.touchIDErrorAlert()
         }
+    }
+    
+    func touchIDErrorAlert() {
+        let alert = UIAlertController.init(title: "Try Again", message: "Something Went Wrong", preferredStyle: .alert)
+        let cancelAtn = UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAtn)
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
