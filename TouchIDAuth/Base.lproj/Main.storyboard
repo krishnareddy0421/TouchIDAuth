@@ -301,6 +301,7 @@
                         <viewLayoutGuide key="safeArea" id="7LL-in-qI3"/>
                     </view>
                     <connections>
+                        <outlet property="touchIDBtn" destination="g0p-wd-e0y" id="dkj-KX-lTF"/>
                         <segue destination="ohO-k6-yMD" kind="unwind" identifier="toLogin" unwindAction="prepareForUnwindWithSegue:" id="tIe-GJ-VCD"/>
                     </connections>
                 </viewController>

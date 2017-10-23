@@ -12,12 +12,19 @@ import SwiftKeychainWrapper
 
 class HomeVC: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var touchIDBtn: UIButton!
+    
     var error:NSError?
     var userName: String!
     var buttonTitle: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let usernameString = KeychainWrapper.standard.string(forKey: "UsernameKey")
+        if usernameString != nil {
+            self.touchIDBtn.setTitle("Touch ID Enabled", for: .normal)
+        }
     }
 
     @IBAction func logoutBtnPressed(_ sender: Any) {
